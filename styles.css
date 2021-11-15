@@ -71,3 +71,23 @@
      max-width: 30%;
  }
  
+ @media (max-width: 375px) {
+    .container {
+       flex-direction: column;
+       margin: 40px 20px;
+       align-items: center;
+       width: auto;          
+    }
+    .sedan, .suv, .luxury {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px;
+   }
+   .sedan{
+      border-radius: 10px 10px 0 0;
+   }
+   .luxury{
+      border-radius: 0 0 10px 10px;
+   }
+ }
